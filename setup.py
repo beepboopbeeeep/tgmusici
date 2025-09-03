@@ -379,7 +379,7 @@ I can help you identify and find music using Shazam's powerful technology.
 
 🔧 **Main Features:**
 • Send me an audio file to identify the song
-• Use inline mode in chats: @{bot_username} [song name]
+• Use inline mode in chats: @{config['bot_username']} [song name]
 • Get detailed information about tracks and artists
 • View trending music charts worldwide
 • Support for multiple languages
@@ -391,8 +391,8 @@ I can help you identify and find music using Shazam's powerful technology.
 /about - About this bot
 
 🎼 **Inline Mode Usage:**
-In any chat, type: @{bot_username} [song name or artist]
-Example: @{bot_username} Bohemian Rhapsody
+In any chat, type: @{config['bot_username']} [song name or artist]
+Example: @{config['bot_username']} Bohemian Rhapsody
 
 Let's find some amazing music! 🎶""",
     
@@ -402,7 +402,7 @@ Let's find some amazing music! 🎶""",
 
 🔧 **قابلیت‌های اصلی:**
 • یک فایل صوتی برای من ارسال کنید تا آهنگ را شناسایی کنم
-• از حالت اینلاین در چت‌ها استفاده کنید: @{bot_username} [نام آهنگ]
+• از حالت اینلاین در چت‌ها استفاده کنید: @{config['bot_username']} [نام آهنگ]
 • دریافت اطلاعات دقیق درباره آهنگ‌ها و هنرمندان
 • مشاهده چارت‌های موسیقی محبوب در سراسر جهان
 • پشتیبانی از چندین زبان
@@ -414,8 +414,8 @@ Let's find some amazing music! 🎶""",
 /about - درباره این ربات
 
 🎼 **نحوه استفاده از حالت اینلاین:**
-در هر چتی، تایپ کنید: @{bot_username} [نام آهنگ یا هنرمند]
-مثال: @{bot_username} Bohemian Rhapsody
+در هر چتی، تایپ کنید: @{config['bot_username']} [نام آهنگ یا هنرمند]
+مثال: @{config['bot_username']} Bohemian Rhapsody
 
 بیایید موسیقی‌های فوق‌العاده‌ای پیدا کنیم! 🎶"""
 }}
@@ -431,8 +431,8 @@ HELP_MESSAGE = {{
 • I'll identify the song and provide detailed information
 
 **2. Inline Mode:**
-• In any chat, type: @{bot_username} [search query]
-• Example: @{bot_username} Queen Bohemian Rhapsody
+• In any chat, type: @{config['bot_username']} [search query]
+• Example: @{config['bot_username']} Queen Bohemian Rhapsody
 • Select a result to send it to the chat
 
 **3. Search Commands:**
@@ -460,8 +460,8 @@ Need more help? Contact @admin""",
 • من آهنگ را شناسایی کرده و اطلاعات دقیق ارائه می‌دهم
 
 **2. حالت اینلاین:**
-• در هر چتی، تایپ کنید: @{bot_username} [عبارت جستجو]
-• مثال: @{bot_username} Queen Bohemian Rhapsody
+• در هر چتی، تایپ کنید: @{config['bot_username']} [عبارت جستجو]
+• مثال: @{config['bot_username']} Queen Bohemian Rhapsody
 • یک نتیجه را انتخاب کنید تا به چت ارسال شود
 
 **3. دستورات جستجو:**
