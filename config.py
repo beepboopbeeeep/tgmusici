@@ -1,0 +1,272 @@
+"""
+Configuration file for ShazamIO Telegram Bot
+TODO: Modify the values below according to your needs
+"""
+
+# =============================================
+# TELEGRAM BOT CONFIGURATION
+# =============================================
+
+# Your Telegram Bot Token from @BotFather
+# Get this token: https://t.me/BotFather
+TELEGRAM_BOT_TOKEN = "YOUR_TELEGRAM_BOT_TOKEN_HERE"  # TODO: Replace with your bot token
+
+# Bot username (without @)
+BOT_USERNAME = "ShazamIOBot"  # TODO: Replace with your bot username
+
+# =============================================
+# BOT BEHAVIOR CONFIGURATION
+# =============================================
+
+# Maximum number of results for inline queries
+MAX_INLINE_RESULTS = 10
+
+# Maximum file size for audio recognition (in bytes)
+MAX_AUDIO_FILE_SIZE = 20 * 1024 * 1024  # 20MB
+
+# Supported audio formats for recognition
+SUPPORTED_AUDIO_FORMATS = ['.mp3', '.wav', '.ogg', '.m4a', '.flac']
+
+# Default language (change to 'fa' for Persian or 'en' for English)
+DEFAULT_LANGUAGE = 'en'
+
+# =============================================
+# SHAZAMIO CONFIGURATION
+# =============================================
+
+# Shazam API timeout (in seconds)
+SHAZAM_TIMEOUT = 30
+
+# Maximum retries for Shazam API calls
+SHAZAM_MAX_RETRIES = 3
+
+# =============================================
+# MESSAGE TEMPLATES
+# =============================================
+
+# Bot description for inline mode
+INLINE_DESCRIPTION = {
+    'en': "🎵 Find and identify music with ShazamIO Bot",
+    'fa': "🎵 پیدا کردن و شناسایی موسیقی با ربات ShazamIO"
+}
+
+# =============================================
+# ADMIN CONFIGURATION
+# =============================================
+
+# Admin user IDs (optional)
+# Get your user ID: https://t.me/userinfobot
+ADMIN_USER_IDS = []  # TODO: Add admin user IDs if needed
+
+# Enable admin-only features
+ADMIN_ONLY_MODE = False
+
+# =============================================
+# LOGGING CONFIGURATION
+# =============================================
+
+# Log level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+LOG_LEVEL = "INFO"
+
+# Log file path (leave empty to disable file logging)
+LOG_FILE = "bot.log"
+
+# =============================================
+# DATABASE CONFIGURATION (Optional)
+# =============================================
+
+# Enable user data persistence
+ENABLE_DATABASE = False
+
+# Database file path (SQLite)
+DATABASE_FILE = "bot_data.db"
+
+# =============================================
+# RATE LIMITING CONFIGURATION
+# =============================================
+
+# Enable rate limiting
+ENABLE_RATE_LIMITING = True
+
+# Maximum requests per user per minute
+MAX_REQUESTS_PER_MINUTE = 30
+
+# =============================================
+# FEATURE FLAGS
+# =============================================
+
+# Enable audio file recognition
+ENABLE_AUDIO_RECOGNITION = True
+
+# Enable inline mode
+ENABLE_INLINE_MODE = True
+
+# Enable language selection
+ENABLE_LANGUAGE_SELECTION = True
+
+# Enable track info commands
+ENABLE_TRACK_INFO = True
+
+# Enable artist info commands
+ENABLE_ARTIST_INFO = True
+
+# Enable charts and trending
+ENABLE_CHARTS = True
+
+# =============================================
+# CUSTOMIZATION
+# =============================================
+
+# Bot display name
+BOT_DISPLAY_NAME = "ShazamIO Bot"
+
+# Bot about text
+BOT_ABOUT_TEXT = {
+    'en': "🎵 ShazamIO Bot - Your music identification assistant!\n\n"
+          "Features:\n"
+          "• Identify music from audio files\n"
+          "• Search for songs and artists\n"
+          "• Get track information\n"
+          "• View music charts\n"
+          "• Inline mode for chats\n"
+          "• Multi-language support",
+    
+    'fa': "🎵 ربات ShazamIO - دستیار شناسایی موسیقی شما!\n\n"
+          "قابلیت‌ها:\n"
+          "• شناسایی موسیقی از فایل‌های صوتی\n"
+          "• جستجوی آهنگ‌ها و هنرمندان\n"
+          "• دریافت اطلاعات آهنگ\n"
+          "• مشاهده چارت‌های موسیقی\n"
+          "• حالت اینلاین برای چت‌ها\n"
+          "• پشتیبانی چندزبانه"
+}
+
+# Start message templates
+START_MESSAGE = {
+    'en': """🎵 Welcome to ShazamIO Bot!
+
+I can help you identify and find music using Shazam's powerful technology.
+
+🔧 **Main Features:**
+• Send me an audio file to identify the song
+• Use inline mode in chats: @{bot_username} [song name]
+• Get detailed information about tracks and artists
+• View trending music charts worldwide
+• Support for multiple languages
+
+🌐 **Available Commands:**
+/start - Show this welcome message
+/language - Change bot language
+/help - Show help information
+/about - About this bot
+
+🎼 **Inline Mode Usage:**
+In any chat, type: @{bot_username} [song name or artist]
+Example: @{bot_username} Bohemian Rhapsody
+
+Let's find some amazing music! 🎶""",
+    
+    'fa': """🎵 به ربات ShazamIO خوش آمدید!
+
+من می‌توانم به شما در شناسایی و پیدا کردن موسیقی با استفاده از تکنولوژی قدرتمند شازمام کمک کنم.
+
+🔧 **قابلیت‌های اصلی:**
+• یک فایل صوتی برای من ارسال کنید تا آهنگ را شناسایی کنم
+• از حالت اینلاین در چت‌ها استفاده کنید: @{bot_username} [نام آهنگ]
+• دریافت اطلاعات دقیق درباره آهنگ‌ها و هنرمندان
+• مشاهده چارت‌های موسیقی محبوب در سراسر جهان
+• پشتیبانی از چندین زبان
+
+🌐 **دستورات موجود:**
+/start - نمایش این پیام خوش‌آمدگویی
+/language - تغییر زبان ربات
+/help - نمایش راهنما
+/about - درباره این ربات
+
+🎼 **نحوه استفاده از حالت اینلاین:**
+در هر چتی، تایپ کنید: @{bot_username} [نام آهنگ یا هنرمند]
+مثال: @{bot_username} Bohemian Rhapsody
+
+بیایید موسیقی‌های فوق‌العاده‌ای پیدا کنیم! 🎶"""
+}
+
+# Help message templates
+HELP_MESSAGE = {
+    'en': """🎵 **ShazamIO Bot Help**
+
+🔧 **How to use me:**
+
+**1. Audio Recognition:**
+• Send me any audio file (MP3, WAV, OGG, M4A, FLAC)
+• I'll identify the song and provide detailed information
+
+**2. Inline Mode:**
+• In any chat, type: @{bot_username} [search query]
+• Example: @{bot_username} Queen Bohemian Rhapsody
+• Select a result to send it to the chat
+
+**3. Search Commands:**
+• /track [song name] - Search for a specific track
+• /artist [artist name] - Search for an artist
+• /charts - View global music charts
+• /top [country] - Top tracks in a country
+
+**4. Language:**
+• /language - Change bot language (English/Persian)
+
+📝 **Tips:**
+• Maximum file size: 20MB
+• Supported formats: MP3, WAV, OGG, M4A, FLAC
+• Inline mode works in all chats and channels
+
+Need more help? Contact @admin""",
+    
+    'fa': """🎵 **راهنمای ربات ShazamIO**
+
+🔧 **نحوه استفاده:**
+
+**1. شناسایی صوتی:**
+• هر فایل صوتی را برای من ارسال کنید (MP3, WAV, OGG, M4A, FLAC)
+• من آهنگ را شناسایی کرده و اطلاعات دقیق ارائه می‌دهم
+
+**2. حالت اینلاین:**
+• در هر چتی، تایپ کنید: @{bot_username} [عبارت جستجو]
+• مثال: @{bot_username} Queen Bohemian Rhapsody
+• یک نتیجه را انتخاب کنید تا به چت ارسال شود
+
+**3. دستورات جستجو:**
+• /track [نام آهنگ] - جستجوی آهنگ خاص
+• /artist [نام هنرمند] - جستجوی هنرمند
+• /charts - مشاهده چارت‌های جهانی موسیقی
+• /top [کشور] - آهنگ‌های برتر در یک کشور
+
+**4. زبان:**
+• /language - تغییر زبان ربات (انگلیسی/فارسی)
+
+📝 **نکات:**
+• حداکثر حجم فایل: ۲۰ مگابایت
+• فرمت‌های پشتیبانی شده: MP3, WAV, OGG, M4A, FLAC
+• حالت اینلاین در تمام چت‌ها و کانال‌ها کار می‌کند
+
+نیاز به کمک بیشتر دارید؟ با @admin تماس بگیرید"""
+}
+
+# Error messages
+ERROR_MESSAGES = {
+    'en': {
+        'audio_recognition_failed': "❌ Sorry, I couldn't identify this audio. Please try with a clearer audio file.",
+        'file_too_large': f"❌ File is too large! Maximum size is {MAX_AUDIO_FILE_SIZE // (1024*1024)}MB.",
+        'unsupported_format': "❌ Unsupported file format! Please send MP3, WAV, OGG, M4A, or FLAC files.",
+        'no_results': "❌ No results found for your search.",
+        'rate_limited': "⚠️ Too many requests! Please wait a moment before trying again.",
+        'api_error': "❌ API error occurred. Please try again later."
+    },
+    'fa': {
+        'audio_recognition_failed': "❌ متأسفم، نتوانستم این صدا را شناسایی کنم. لطفاً با یک فایل صوتی واضح‌تر دوباره تلاش کنید.",
+        'file_too_large': f"❌ فایل خیلی بزرگ است! حداکثر حجم {MAX_AUDIO_FILE_SIZE // (1024*1024)} مگابایت است.",
+        'unsupported_format': "❌ فرمت فایل پشتیبانی نمی‌شود! لطفاً فایل‌های MP3, WAV, OGG, M4A یا FLAC ارسال کنید.",
+        'no_results': "❌ نتیجه‌ای برای جستجوی شما یافت نشد.",
+        'rate_limited': "⚠️ درخواست‌های زیادی ارسال کرده‌اید! لطفاً لحظه‌ای صبر کرده و دوباره تلاش کنید.",
+        'api_error': "❌ خطای API رخ داده است. لطفاً بعداً دوباره تلاش کنید."
+    }
+}
